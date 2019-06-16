@@ -2,9 +2,9 @@
     "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
     "@type": "SoftwareSourceCode",
     "description": "Lourdes and Bertha's Repository is a light weight repository system for digital objects such as images and other electronic documents",
-    "name": "labr",
-    "codeRepository": "https://github.com/rsdoiel/labr",
-    "issueTracker": "https://github.com/rsdoiel/labr/issues",
+    "name": "lablr",
+    "codeRepository": "https://github.com/rsdoiel/lablr",
+    "issueTracker": "https://github.com/rsdoiel/lablr/issues",
     "license": "https://opensource.org/licenses/BSD-3-Clause",
     "version": "0.0.0",
     "author": [
@@ -18,7 +18,7 @@
         }
     ],
     "developmentStatus": "planning",
-    "downloadUrl": "https://github.com/rsdoiel/labr/releases/labr-v0.0.0.zip",
+    "downloadUrl": "https://github.com/rsdoiel/lablr/releases/lablr-v0.0.0-raspbian-arm7.zip",
     "keywords": [
         "GitHub",
         "metadata",
