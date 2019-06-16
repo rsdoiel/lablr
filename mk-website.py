@@ -88,6 +88,7 @@ def main(args):
         for filename in files:
             in_name = ""
             out_name = ""
+            nav_name = os.path.join(path, "nav.md")
             if filename in custom_page_map:
                 in_name = os.path.join(path, filename)
                 out_name = os.path.join(path, custom_page_map[filename])
@@ -99,10 +100,11 @@ def main(args):
                 print(f"Ingesting {in_name}")
                 metadata = json.dumps(frontmatter(in_name))
                 #NOTE: Processing metadata should happen here.
-                page_data = [
-                        "nav=nav.md",
-                        f"front_matter=json:{metadata}"
-                ]
+                page_data = []
+                if len(metadata):
+                    page_data.append(f"front_matter=json:{metadata}")
+                if os.path.exists(nav_name):
+                    page_data.append(f"nav={nav_name}")
                 if in_name.endswith("LICENSE"):
                     with open(in_name) as f:
                         src = f.read()
