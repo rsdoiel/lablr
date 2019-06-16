@@ -1,4 +1,6 @@
 *~
+*.tmp
+*.swp
 *.bak
 *.tmp
 *.ds

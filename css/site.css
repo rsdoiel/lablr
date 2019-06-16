@@ -89,6 +89,10 @@ section, article {
     margin-bottom: 0.24em;
 }
 
+section {
+    padding-bottom: 2em;
+    margin-bottom: 4em;
+}
 
 img.rss-valid {
     display: inline;

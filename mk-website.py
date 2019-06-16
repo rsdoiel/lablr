@@ -101,9 +101,14 @@ def main(args):
                 #NOTE: Processing metadata should happen here.
                 page_data = [
                         "nav=nav.md",
-                        f"content={in_name}",
-                        f"front_matter=json:{metadata}",
+                        f"front_matter=json:{metadata}"
                 ]
+                if in_name.endswith("LICENSE"):
+                    with open(in_name) as f:
+                        src = f.read()
+                        page_data.append(f"content=markdown:{src}")
+                else:
+                    page_data.append(f"content={in_name}")
                 err = mkpage(out_name, [ "page.tmpl" ], page_data)
                 if err != "":
                     print(f"Failed {in_name} -> {out_name}, {err}");
