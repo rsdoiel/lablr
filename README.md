@@ -1,7 +1,7 @@
 
-# lablr - Lourdes and Bertha's Light-weight Repository
+# LaBLR - Lourdes and Bertha's Light-weight Repository
 
-**lablr** is a light weight personal repository
+**LaBLR** is a light weight personal repository
 for managing digital objects such as photos of
 family and friends. It is named and created for 
 Lourdes and Bertha to manage their treasure trove of
