@@ -20,7 +20,7 @@ VERSION_NUMBER is a [symantic version number](http://semver.org/) (e.g. v0.1.2)
 For all the released version go to the project page on Github 
 and click latest release
 
->    https://github.com/caltechlibrary/lablr/releases/latest
+>    https://github.com/rsdoiel/lablr/releases/latest
 
 
 | Platform    | Zip Filename                             |
@@ -132,15 +132,15 @@ the dependant packages as well as _lablr_'s source code.
 
 
 ```shell
-    go get -u github.com/caltechlibrary/lablr/...
+    go get -u github.com/rsdoiel/lablr/...
 ```
 
 Or clone the repstory and then compile
 
 ```shell
     cd
-    git clone https://github.com/caltechlibrary/lablr src/github.com/caltechlibrary/lablr
-    cd src/github.com/caltechlibrary/lablr
+    git clone https://github.com/rsdoiel/lablr src/github.com/rsdoiel/lablr
+    cd src/github.com/rsdoiel/lablr
     make
     make test
     make install
